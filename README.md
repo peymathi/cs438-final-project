@@ -38,6 +38,8 @@ The game's shooting mechanics are based on RayCasting. This means that the camer
 
 The gun's firerate can be set to different values. Every bullet after the first in a given amount of time will cause a progressive amount of error in the raycast. This is to simulate recoil error. Moving and shooting will also add error.
 
+When a bullet is fired and collides with a valid PhysicsBody, a bullet hole will be 
+
 ## Models, Textures, and HDRI
 
 Most of these resources were found on Model/Texture/HDRI Haven and CGTrader for free. The hand model came from CGTrader as a blender project which I opened up and modified using an armature to curl the hand to the way I wanted. In hindsight, working with someone else's model in blender took so long I could have probably just made the hand myself. The gun model was a great find because it probably would have taken me a week to make a model and texture that looked that good. 
