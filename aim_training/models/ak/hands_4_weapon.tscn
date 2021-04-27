@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://models/hand/FBX/hands_4_weapon.fbx" type="PackedScene" id=1]
+
+[node name="hands_4_weapon" instance=ExtResource( 1 )]

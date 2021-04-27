@@ -1,0 +1,49 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://textures/concrete_floor/concrete_AO_4k.png" type="Texture" id=1]
+[ext_resource path="res://scenes/window.tscn" type="PackedScene" id=2]
+[ext_resource path="res://textures/concrete_floor/concrete_disp_4k.png" type="Texture" id=3]
+[ext_resource path="res://textures/concrete_floor/concrete_Nor_4k.png" type="Texture" id=4]
+[ext_resource path="res://textures/concrete_floor/concrete_diff_4k.png" type="Texture" id=5]
+[ext_resource path="res://textures/concrete_floor/concrete_rough_4k.png" type="Texture" id=6]
+[ext_resource path="res://textures/concrete_floor/concrete_spec_4k.png" type="Texture" id=7]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 20, 0.1, 25 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 5 )
+metallic_specular = 0.8
+metallic_texture = ExtResource( 7 )
+roughness_texture = ExtResource( 6 )
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource( 4 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 1 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.0
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 3 )
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( -10, 0.05, 12.5, 10, 0.05, -12.5, 10, 0.05, 12.5, -10, 0.05, -12.5, -10, -0.05, 12.5, 10, -0.05, -12.5, 10, -0.05, 12.5, -10, -0.05, -12.5, 10, 0.05, 12.5, -10, 0.05, -12.5, 10, 0.05, -12.5, -10, 0.05, 12.5, 10, -0.05, 12.5, -10, -0.05, -12.5, 10, -0.05, -12.5, -10, -0.05, 12.5, 10, 0.05, 12.5, -10, -0.05, 12.5, -10, 0.05, 12.5, 10, -0.05, 12.5, 10, 0.05, -12.5, -10, -0.05, -12.5, -10, 0.05, -12.5, 10, -0.05, -12.5 )
+
+[node name="TargetPracticeArena" type="Spatial"]
+
+[node name="InsideFloor" type="StaticBody" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="InsideFloor"]
+mesh = SubResource( 1 )
+material/0 = SubResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="InsideFloor"]
+shape = SubResource( 2 )
+
+[node name="window" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7739, 0.889259, 0 )
