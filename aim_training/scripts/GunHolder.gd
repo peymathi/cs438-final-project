@@ -71,7 +71,7 @@ func handle_shot():
 	# Calculate collisions and draw a bullet mark
 	if $GunPointer.is_colliding():
 		var collision_point = $GunPointer.get_collision_point()
-		collision_point.x -= 0.01
+		collision_point.x -= 0.015
 		var bullet_mark = bullet_mark_master.instance()
 		bullet_mark.look_at_from_position(collision_point + ($GunPointer.get_collision_normal() / 1000), collision_point + $GunPointer.get_collision_normal(), Vector3(1, 1, 1))
 		owner.owner.add_child(bullet_mark)

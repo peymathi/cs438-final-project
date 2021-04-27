@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/Head.gd" type="Script" id=1]
 [ext_resource path="res://scripts/Camera.gd" type="Script" id=2]
@@ -11,18 +11,7 @@
 
 [sub_resource type="CapsuleShape" id=1]
 
-[sub_resource type="GDScript" id=2]
-script/source = "extends RayCast
-
-
-		
-func _physics_process(delta):
-	pass
-	
-	
-"
-
-[sub_resource type="SpatialMaterial" id=3]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 6 )
 uv1_scale = Vector3( 0, 0, 0 )
 
@@ -47,7 +36,6 @@ script = ExtResource( 7 )
 
 [node name="GunPointer" type="RayCast" parent="Head/GunHolder"]
 enabled = true
-script = SubResource( 2 )
 
 [node name="AK-103" parent="Head/GunHolder" instance=ExtResource( 4 )]
 transform = Transform( 1.03, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.256, -0.39, 0.107 )
@@ -55,7 +43,7 @@ transform = Transform( 1.03, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.256, -0.39, 0.107 )
 [node name="Hand" type="MeshInstance" parent="Head/GunHolder"]
 transform = Transform( -0.00827151, 0, -0.00725136, 0, 0.01, 0, 0.00725136, 0, -0.00827151, 0.427, -0.175, 0.035 )
 mesh = ExtResource( 5 )
-material/0 = SubResource( 3 )
+material/0 = SubResource( 2 )
 
 [node name="ShotDelay" type="Timer" parent="Head/GunHolder"]
 one_shot = true
