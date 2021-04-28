@@ -41,17 +41,18 @@ func _handle_crouch(delta):
 func _physics_process(delta):
 	
 	if abs(controller_vertical_rotation_amount) > get_parent().controller_deadzone:
+		
 		# Check if we are looking straight up
-			if vertical_rotation + controller_vertical_rotation_amount > 1.475:
-				if vertical_rotation != 1.475:
+			if vertical_rotation + controller_vertical_rotation_amount < -1.475:
+				if vertical_rotation != -1.475:
 					rotate_z(-1.475 - vertical_rotation)
-					vertical_rotation = 1.475
+					vertical_rotation = -1.475
 			
 			# Check if we are looking straight down
-			elif vertical_rotation + controller_vertical_rotation_amount < -1.475:
-				if vertical_rotation != -1.475:
+			elif vertical_rotation + controller_vertical_rotation_amount > 1.475:
+				if vertical_rotation != 1.475:
 					rotate_z(1.475 - vertical_rotation)
-					vertical_rotation = -1.475
+					vertical_rotation = 1.475
 					
 			else:
 				rotate_z(controller_vertical_rotation_amount)

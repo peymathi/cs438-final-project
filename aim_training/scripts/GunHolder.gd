@@ -33,6 +33,7 @@ func _ready():
 	bullet_mark_master = preload("res://scenes/BulletMark.tscn")
 	cast_loc = $GunPointer.transform.basis.x
 	cast_loc.x += max_bullet_distance
+	$GunPointer.set_cast_to(cast_loc)
 	
 	# Create an array of gun shot players based on the number needed for constant playback
 	audio_player_master = preload("res://scenes/GunShotPlayer.tscn")
@@ -40,10 +41,6 @@ func _ready():
 	for i in range(ceil(audio_instance.stream.get_length() * fire_rate) * 5):
 		audio_players.append(audio_player_master.instance())
 		add_child(audio_players[i])
-		
-	# Center on cursor
-	cast_loc.z -= 30
-	$GunPointer.set_cast_to(cast_loc)
 	
 	# Set up timers
 	$ShotDelay.set_wait_time(1.0 / fire_rate)
