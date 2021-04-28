@@ -8,9 +8,9 @@ This is the final project for the CSCI 438 Advanced Game Development course. The
 
 The executables for the game are too large to store on github, instead here are links executables for all the main operating systems:
 
-- Windows
-- Mac
-- Linux
+- [Windows](https://drive.google.com/file/d/1SYeZhQCkGy4KUKJX6YrzTJkvQnI52XIt/view?usp=sharing)
+- [Mac](https://drive.google.com/file/d/1oRpSWF2LL81OuqsdiAe5xmGdPDlTcLbE/view?usp=sharing)
+- [Linux](https://drive.google.com/file/d/18g1IR6ughanVchPzaxSqAjhDBSaRr5ih/view?usp=sharing)
 
 ## Gameplay
 
