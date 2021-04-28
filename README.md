@@ -6,7 +6,7 @@ This is the final project for the CSCI 438 Advanced Game Development course. The
 
 ## Installation
 
-The executables for the game are too large to store on github, instead here are links to the main operating system's executables:
+The executables for the game are too large to store on github, instead here are links executables for all the main operating systems:
 
 - Windows
 - Mac
