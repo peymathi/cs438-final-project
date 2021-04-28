@@ -52,7 +52,7 @@ One feature that I really wanted to implement but did not have time to work on i
 
 ## Models, Textures, and HDRI
 
-Most of these resources were found on Model/Texture/HDRI Haven and CGTrader for free. The hand model came from CGTrader as a blender project which I opened up and modified using an armature to curl the hand to the way I wanted. In hindsight, working with someone else's model in blender took so long I could have probably just made the hand myself. The gun model was a great find because it probably would have taken me a week to make a model and texture that looked that good. 
+Most of these resources were found on Model/Texture/HDRI Haven and CGTrader for free. The hand model came from CGTrader as a blender project which I opened up and modified using an armature to curl the hand to the way I wanted. In hindsight, working with someone else's model in blender took so long I could have probably just made the hand myself. The gun model was a great find because it probably would have taken me a week to make a model and texture that looked that good and I basically plugged it straight into Godot and it worked flawlessly.
 
 A LOT of time on this project was speant learning to work with textures. I feel pretty confident in using the SpatialMaterial resource in Godot now and I have learned a lot about different texture maps including Albedo / Diffuse, Ambient Occlusion, Metallic / Specular, Roughness, Normal / Bump, and Depth maps. 
 
