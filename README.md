@@ -57,3 +57,7 @@ Most of these resources were found on Model/Texture/HDRI Haven and CGTrader for 
 A LOT of time on this project was speant learning to work with textures. I now feel pretty confident in using the SpatialMaterial resource in Godot and I have learned a lot about different texture maps including Albedo / Diffuse, Ambient Occlusion, Metallic / Specular, Roughness, Normal / Bump, and Depth maps. 
 
 One thing that I would LOVE to spend more time looking at is the HDRI Panorama and the environment parameters in general. I really didn't understand how the HDRI image affected the lighting and shading of my textures in the scene, so a lot of the HDRI images that I thought looked cool were unusable because their lighting made my textures look bad. The HDRI used in the final product is not the background that I wanted to use, but it provided the best lighting using the default environment parameters so I went with it. 
+
+## Complications and Lessons Learned
+
+TODO
