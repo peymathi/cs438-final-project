@@ -6,11 +6,11 @@ This is the final project for the CSCI 438 Advanced Game Development course. The
 
 ## Installation
 
-The executables for the game are too large to store on github, instead here are links to the main operating system's executables:
+The executables for the game are too large to store on github, instead here are links executables for all the main operating systems:
 
-- Windows
-- Mac
-- Linux
+- [Windows](https://drive.google.com/file/d/1SYeZhQCkGy4KUKJX6YrzTJkvQnI52XIt/view?usp=sharing)
+- [Mac](https://drive.google.com/file/d/1oRpSWF2LL81OuqsdiAe5xmGdPDlTcLbE/view?usp=sharing)
+- [Linux](https://drive.google.com/file/d/18g1IR6ughanVchPzaxSqAjhDBSaRr5ih/view?usp=sharing)
 
 ## Gameplay
 
@@ -46,14 +46,14 @@ The movement of the game was largely inspired by Valorant's movement with the ad
 
 The game's shooting mechanics are based on Ray Casting. This means that the camera is holding an invisible laser pointer that aims forward through the crosshairs and anytime a shot is registered the laser pointer will report the coordinates of the nearest collision with the laser pointer. This means that bullets have no travel time and bullet collisions are not computationally expensive. This is the same way that many popular first person shooters do it.
 
-When a bullet is fired and collides with a valid PhysicsBody, a bullet hole will be placed at the collision point. The way this works is that a 3D sprite image is placed at the point facing in the normal direction of the plane collided with. The bullet hole is lazily animated to look like a bullet goes through it by having two states: the first state is the bullet hole with a white center instead of black with a spotlight shining on the entire image, the second state is the static bullet hole image with no lighting or changes. When the bullet is fired, the bullet mark will be created in the first state for a fraction of a second and then transition to the second state. When played very fast (as fast as bullets!) this looks like a bullet piercing a surface.
+When a bullet is fired and collides with a valid PhysicsBody, a bullet hole will be placed at the collision point. The way this works is that a 3D sprite image is placed at the point facing in the normal direction of the plane collided with. The bullet hole is lazily animated to look like a bullet goes through it by having two states: the first state is the bullet hole with a white center instead of black with a spotlight shining on the entire image, the second state is the static bullet hole image with a black center and no lighting or changes. When the bullet is fired, the bullet mark will be created in the first state for a fraction of a second and then transition to the second state. When played very fast (as fast as bullets!) this looks like a bullet piercing a surface.
 
 One feature that I really wanted to implement but did not have time to work on is shooting inaccuracy. I wanted to make it so that there would be slight inaccuracies added to the raycast whenever recoiling, moving, and sprinting. Crouching would have lowered these inaccuracies. This would have made the simulation much more realistic.
 
 ## Models, Textures, and HDRI
 
-Most of these resources were found on Model/Texture/HDRI Haven and CGTrader for free. The hand model came from CGTrader as a blender project which I opened up and modified using an armature to curl the hand to the way I wanted. In hindsight, working with someone else's model in blender took so long I could have probably just made the hand myself. The gun model was a great find because it probably would have taken me a week to make a model and texture that looked that good. 
+Most of these resources were found on Model/Texture/HDRI Haven and CGTrader for free. The hand model came from CGTrader as a blender project which I opened up and modified using an armature to curl the hand to the way I wanted. In hindsight, working with someone else's model in blender took so long I could have probably just made the hand myself. The gun model was a great find because it probably would have taken me a week to make a model and texture that looked that good and I basically plugged it straight into Godot and it worked flawlessly.
 
-A LOT of time on this project was speant learning to work with textures. I feel pretty confident in using the SpatialMaterial resource in Godot now and I have learned a lot about different texture maps including Albedo / Diffuse, Ambient Occlusion, Metallic / Specular, Roughness, Normal / Bump, and Depth maps. 
+A LOT of time on this project was speant learning to work with textures. I now feel pretty confident in using the SpatialMaterial resource in Godot and I have learned a lot about different texture maps including Albedo / Diffuse, Ambient Occlusion, Metallic / Specular, Roughness, Normal / Bump, and Depth maps. 
 
-One thing that I would LOVE to spend more time looking at is the HDRI Panorama and the environment parameters in general. I really didn't understand how the HDRI image used affected the lighting and shading of my textures in the scene, so a lot of the HDRI images that I thought looked cool were unusable because their lighting made my textures look bad. The HDRI used in the final product is not the background that I wanted to use, but it provided the best lighting using the default environment parameters so I went with it. 
+One thing that I would LOVE to spend more time looking at is the HDRI Panorama and the environment parameters in general. I really didn't understand how the HDRI image affected the lighting and shading of my textures in the scene, so a lot of the HDRI images that I thought looked cool were unusable because their lighting made my textures look bad. The HDRI used in the final product is not the background that I wanted to use, but it provided the best lighting using the default environment parameters so I went with it. 
