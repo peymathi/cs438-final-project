@@ -16,7 +16,7 @@ The executables for the game are too large to store on github, instead here are 
 
 ## Gameplay
 
-The gameplay of the game put plainly is firing a rifle at surfaces to create bullet holes. There are several surfaces to shoot at with a sort of shooting range window area to shoot out of. It is fun to fire with infinite ammo at surfaces and then run over to them to look at the bullet holes. Overall the gameplay options are short, but this project was not meant to be a fully fleshed out game. Rather, this project is meant to be a framework for any first person game that will rely on Ray Casting bullet collisions. 
+The gameplay of the game put plainly is firing a rifle at surfaces to create bullet holes. There are several surfaces to shoot at with a shooting range window area to shoot out of. It is fun to fire with infinite ammo at surfaces and then run over to them to look at the bullet holes. Overall the gameplay options are short, but this project was not meant to be a fully fleshed out game. Rather, this project is meant to be a framework for any first person game that will rely on Ray Casting bullet collisions. 
 
 ## Controls
 
