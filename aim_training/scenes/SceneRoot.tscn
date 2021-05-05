@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/TargetPracticeArena.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/SceneRoot.gd" type="Script" id=4]
+
+[node name="SceneRoot" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.375564, 0 )
+
+[node name="TargetPracticeArena" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.230336, 0 )

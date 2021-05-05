@@ -1,0 +1,8 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://textures/2d/bulls_eye.png" type="Texture" id=1]
+
+[resource]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 1.173, 1.426, 0 )
+uv1_offset = Vector3( 0.217, -0.583, 0 )
